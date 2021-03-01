@@ -1,0 +1,29 @@
+.main-toolbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 3vw;
+	padding-top: $padding-sm;
+	background-color: lightblue;
+
+	&__group {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.viewer-toolbar {
+	display: flex;
+	flex-direction: row;
+	height: 5vh;
+	width: 100%;
+	background-color: lightgreen;
+
+	&__group {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+}

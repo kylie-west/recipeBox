@@ -3,3 +3,10 @@
 
 @import "base/base";
 @import "base/typography";
+
+@import "components/recipe";
+@import "components/recipe-list";
+@import "components/recipe-viewer";
+@import "components/toolbar";
+
+@import "pages/mainpage";
