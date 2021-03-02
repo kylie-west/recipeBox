@@ -1,15 +1,17 @@
+import recipes from "../../testData";
+
 export default function RecipeListItems() {
 	return (
 		<ol>
-			<li>
-				<button className="recipe-list__button">Recipe 1</button>
-			</li>
-			<li>
-				<button className="recipe-list__button">Recipe 2</button>
-			</li>
-			<li>
-				<button className="recipe-list__button">Recipe 3</button>
-			</li>
+			{recipes.map((recipe) => {
+				return (
+					<li>
+						<button className="recipe-list__button" key={recipe.title}>
+							{recipe.title}
+						</button>
+					</li>
+				);
+			})}
 		</ol>
 	);
 }
