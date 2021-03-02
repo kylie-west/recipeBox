@@ -1,15 +1,31 @@
 .main-toolbar {
+	z-index: 30;
+	background-image: url("../images/blackpaper.png");
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-	width: 3vw;
-	padding-top: $padding-sm;
-	background-color: lightblue;
+	width: 4vw;
+	padding: $padding-sm 0;
 
 	&__group {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.material-icons {
+		font-size: 3rem;
+		color: $color-primary-light;
+	}
+
+	&__button {
+		&:hover {
+			cursor: pointer;
+
+			.material-icons {
+				color: $color-primary;
+			}
+		}
 	}
 }
 
@@ -18,12 +34,33 @@
 	flex-direction: row;
 	height: 5vh;
 	width: 100%;
-	background-color: lightgreen;
+	margin-bottom: 5rem;
 
-	&__group {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
+	&__button {
+		margin-right: 1rem;
+
+		&:hover {
+			.material-icons {
+				color: $color-primary-dark;
+			}
+		}
+
+		&--delete {
+			margin-right: 1rem;
+
+			&:hover {
+				.material-icons {
+					color: $color-red;
+				}
+			}
+		}
+
+		&,
+		&--delete {
+			margin-right: 1rem;
+			&:hover {
+				cursor: pointer;
+			}
+		}
 	}
 }

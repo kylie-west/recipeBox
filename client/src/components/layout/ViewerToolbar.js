@@ -1,17 +1,17 @@
 export default function ViewerToolbar() {
 	return (
 		<nav className="viewer-toolbar">
-			<div className="viewer-toolbar__group">
-				<button className="viewer-toolbar__button" aria-label="Delete recipe">
-					Delete
-				</button>
-				<button className="viewer-toolbar__button" aria-label="Edit recipe">
-					Edit
-				</button>
-				<button className="viewer-toolbar__button" aria-label="Edit labels">
-					Labels
-				</button>
-			</div>
+			<button
+				className="viewer-toolbar__button--delete"
+				aria-label="Delete recipe">
+				<i className="material-icons">delete</i>
+			</button>
+			<button className="viewer-toolbar__button" aria-label="Edit recipe">
+				<i className="material-icons">create</i>
+			</button>
+			<button className="viewer-toolbar__button" aria-label="Edit labels">
+				<i className="material-icons">label</i>
+			</button>
 		</nav>
 	);
 }

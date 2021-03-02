@@ -1,5 +1,7 @@
 .recipe-list {
-	background-color: rgb(247, 225, 225);
+	z-index: 20;
+	background-image: url("../images/ricepaperdarker.png");
+	box-shadow: 0 2px 36px rgba(0, 0, 0, 0.2);
 	width: 18vw;
 	min-width: 18vw;
 	height: 100%;
@@ -11,9 +13,20 @@
 
 	ol {
 		list-style-type: none;
+
+		li:not(:last-child) {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+		}
 	}
 
-	button {
+	&__button {
+		text-align: start;
 		width: 100%;
+		padding: 2rem;
+
+		&:hover {
+			cursor: pointer;
+			box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+		}
 	}
 }

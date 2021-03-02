@@ -1,9 +1,13 @@
 .recipe-viewer {
-	background-color: lightsteelblue;
+	background-image: url("../images/lightpaperfibers.png");
 	height: 100%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: $padding-md 16rem 0 16rem;
+	padding: $padding-md 14rem 0 14rem;
 	list-style-position: inside;
+
+	.material-icons {
+		color: $color-gray;
+	}
 }

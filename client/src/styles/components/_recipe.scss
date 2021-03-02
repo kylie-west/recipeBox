@@ -1,0 +1,27 @@
+.recipe {
+	header {
+		text-align: center;
+	}
+
+	&__section {
+		margin-bottom: 2rem;
+
+		hr {
+			border-color: rgba($color-gray, 0.1);
+			margin-bottom: 2rem;
+		}
+
+		h1 {
+			margin-bottom: 1rem;
+		}
+
+		h2 {
+			margin-bottom: 0.5rem;
+		}
+
+		ol li,
+		ul li {
+			margin-bottom: 1rem;
+		}
+	}
+}
